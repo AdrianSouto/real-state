@@ -10,12 +10,12 @@ function App() {
     <div className={'h-dvh  w-full justify-center items-center'}>
         {
         Array.from({length: rows}).map((_, rowIndex) => (
-            <div className={`flex -translate-y-[${rowIndex * 2}px]`} key={rowIndex}>
+            <div className={`flex -translate-y-[${rowIndex * 20}px]`} key={rowIndex}>
                 {
                     Array.from({length: cols}).map((_, colIndex) => (
                         <div className={'flex'}>
                             <div className={'w-1'}/>
-                            <div className={'bg-red-500 hexagon'} key={colIndex}></div>
+                            <div className={'bg-red-400 hexagon'} key={colIndex}></div>
                         </div>
 
                     ))
